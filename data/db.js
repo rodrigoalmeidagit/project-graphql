@@ -1,5 +1,11 @@
+let id = 1
+function nextId() {
+  return id++
+}
+
+
 const usersList = [{
-  id: 1,
+  id: nextId(),
   name: 'Rodrigo Almeida',
   email: 'row@row.com',
   age: 40,
@@ -9,7 +15,7 @@ const usersList = [{
   status: "ACTIVE"
 },
 {
-  id: 2,
+  id: nextId(),
   name: 'Irma Almeida',
   email: 'irma@row.com',
   age: 68,
@@ -19,7 +25,7 @@ const usersList = [{
   status: "INATIVE"
 },
 {
-  id: 3,
+  id: nextId(),
   name: 'Nereu Almeida',
   email: 'nereu@row.com',
   age: 75,
@@ -41,4 +47,4 @@ const profiles = [
   }
 ]
 
-module.exports = { usersList, profiles }
+module.exports = { usersList, profiles, nextId }
