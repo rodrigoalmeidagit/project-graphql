@@ -18,5 +18,15 @@ module.exports = {
 
     usersList.push(newUser)
     return newUser
+  },
+
+  deleteUser(_, { id }) {
+    const findUser = usersList.findIndex(u => u.id === id)
+
+    if (findUser < 0) null
+
+    const deleted = usersList.splice(findUser, 1)
+
+    return deleted ? deleted[0] : null
   }
 }
