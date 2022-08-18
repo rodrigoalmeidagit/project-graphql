@@ -28,5 +28,20 @@ module.exports = {
     const deleted = usersList.splice(findUser, 1)
 
     return deleted ? deleted[0] : null
+  },
+
+  updateUser(_, args) {
+    const findUser = usersList.findIndex(u => u.id === args.id)
+
+    if (findUser < 0) null
+
+    const userUpdated = {
+      ...usersList[findUser],
+      ...args
+    }
+
+    usersList.splice(findUser, 1, userUpdated)
+
+    return userUpdated
   }
 }
