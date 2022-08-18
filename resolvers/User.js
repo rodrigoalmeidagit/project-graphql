@@ -1,7 +1,7 @@
 const { profiles } = require('../data/db')
 
 module.exports = {
-  wage(user) {
+  wage_real(user) {
     return user.wage_real
   },
   profile(user) {

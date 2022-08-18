@@ -14,7 +14,7 @@ type User {
   name: String!
   email: String!
   age: Int
-  wage: Float
+  wage_real: Float
   vip: Boolean
   profile: Profile
   status: UserStatus
