@@ -19,3 +19,12 @@ type User {
   profile: Profile
   status: UserStatus
 }
+
+input UserInput {
+  name: String
+  email: String
+  age: Int
+  wage_real: Float
+  vip: Boolean
+  status: UserStatus
+}
