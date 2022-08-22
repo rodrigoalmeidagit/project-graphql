@@ -1,13 +1,13 @@
 {
   "name": "schema-query",
   "version": "1.0.0",
-  "description": "",
+  "description": "repo para estudo do curso graphql",
   "main": "index.js",
   "scripts": {
     "start": "nodemon --ext js,graphql"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ['react', 'javascript' ],
+  "author": "Rodrigo S Almeida",
   "license": "ISC",
   "dependencies": {
     "apollo-server": "^2.4.8",
