@@ -1,17 +1,17 @@
 const { nextId, usersList } = require('../data/db')
 
 module.exports = {
-  newUser(_, { data }) {
+  newUser(_, args) {
 
-    const emailAlreadyUsed = usersList.some(e => e.email === data.email)
+    const emailAlreadyUsed = usersList.some(e => e.email === args.email)
 
     if (emailAlreadyUsed) {
-      throw new Error(`E-mail ${data.email} já cadastrado!`)
+      throw new Error(`E-mail ${args.email} já cadastrado!`)
     }
 
     const newUser = {
       id: nextId(),
-      ...data,
+      ...args,
       profile: 1,
       status: 'ACTIVE',
     }
