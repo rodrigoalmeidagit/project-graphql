@@ -6,7 +6,7 @@
   "scripts": {
     "start": "nodemon --ext js,graphql"
   },
-  "keywords": ['react', 'javascript' ],
+  "keywords": [],
   "author": "Rodrigo S Almeida",
   "license": "ISC",
   "dependencies": {

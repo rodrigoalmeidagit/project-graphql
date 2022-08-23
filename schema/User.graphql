@@ -10,7 +10,7 @@ enum UserStatus {
 }
 
 type User {
-  id: Int!
+  id: Int
   name: String!
   email: String!
   age: Int
@@ -24,7 +24,4 @@ input UserInput {
   name: String
   email: String
   age: Int
-  wage_real: Float
-  vip: Boolean
-  status: UserStatus
 }
