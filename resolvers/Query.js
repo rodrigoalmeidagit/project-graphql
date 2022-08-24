@@ -16,7 +16,8 @@ module.exports = {
   },
 
   profile(_, { id }) {
-    const selectedProfile = profiles.filter(p => p.id === id)
+    const selectedProfile = profiles
+      .filter(p => p.id === id)
     return selectedProfile ? selectedProfile[0] : null
   }
 }
