@@ -1,7 +1,4 @@
-let id = 1
-function nextId() {
-  return id++
-}
+const { nextId } = require('../functions/next-id')
 
 
 const usersList = [{
