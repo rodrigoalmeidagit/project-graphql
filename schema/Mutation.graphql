@@ -3,5 +3,5 @@ type Mutation {
 
   deleteUser(filter: UserFilter): User!
 
-  updateUser(id: Int, name: String, email: String, age: Int): User!
+  updateUser(data: UserInput!, filter: UserFilter!): User!
 }
